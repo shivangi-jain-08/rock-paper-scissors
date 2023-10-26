@@ -45,6 +45,7 @@
         justify-content: space-around;
         align-items: flex-end;
         padding: 20px 50px;
+        height: 88vh;
     }
 
 /* Styling the play btn in index.html */
