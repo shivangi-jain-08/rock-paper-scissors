@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="full-container">
+    <!-- Score div---------------------------->
+        <h1>
+            <span id="score-team-1">0</span>
+            <span>-</span>
+            <span id="score-team-2">0</span>
+        </h1>
+    
+    <!-- Main div with the boxes of both player and computer -->
+        <div id="main-container" class="flex">
+        <!-- Div for player--------------------------- -->
+            <div id="team-1" class="team-div">
+                <h3>You</h3>
+
+                <div id="image-container-1" class="image-container">
+                    <img src="" alt="" id="image-1">
+                </div>
+
+                <div id="button-container" class="flex">
+                    <div class="game-buttons" id="rock">
+                        <img src="./assets/rock-logo.png" alt="rock">
+                    </div>
+                    <div class="game-buttons" id="paper">
+                        <img src="./assets/paper-logo.png" alt="paper">
+                    </div>
+                    <div class="game-buttons" id="scissors">
+                        <img src="./assets/scissors-logo.png" alt="scissors">
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/vs.png" alt="">
+
+        <!-- Div for computer -->
+            <div id="team-2" class="team-div">
+                <h3>Comp</h3>
+
+                <div id="image-container-2" class="image-container">
+                    <img src="" alt="" id="image-2">
+                </div>
+            </div>
+        </div>
+
+    <!-- div that contains game over message, initially hidden------------------- -->
+        <div id="game-over">
+            <h3 id="game-over-message"></h3>
+            <button id="play-again-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+</html>
